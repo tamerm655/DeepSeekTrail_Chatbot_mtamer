@@ -4,9 +4,6 @@ import nltk
 from nltk.tokenize import sent_tokenize
 from config import embedding_model, collection
 
-# nltk.download("punkt")
-# nltk.download("punkt_tab")
-
 
 def extract_text_from_pdf(pdf_path):
     """Extracts text from a PDF file."""

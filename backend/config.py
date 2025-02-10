@@ -6,7 +6,7 @@ from langchain.vectorstores import Chroma
 
 # Configuration constants
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
-LLM_MODEL = "deepseek-r1:1.5b"  # Ensure this matches your actual model choice
+LLM_MODEL = "deepseek-r1:1.5b" 
 
 # Initialize embeddings and LLM
 embedding_model = SentenceTransformer(EMBEDDING_MODEL)
