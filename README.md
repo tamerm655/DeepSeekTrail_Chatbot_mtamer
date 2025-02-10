@@ -15,8 +15,8 @@ Backend: Flask, LangChain, ChromaDB, Ollama
 Frontend: Streamlit
 Infrastructure: Docker, Docker Compose
 
-🚀 Getting Started
-1️⃣ Clone the repo
-2️⃣ Run docker-compose up --build
-3️⃣ Open http://localhost:8501 in your browser
-4️⃣ Upload a PDF & start chatting!
+🚀 **Getting Started**
+1️⃣ Clone the repo  
+2️⃣ Run `docker-compose up --build`  
+3️⃣ Open [http://localhost:8501](http://localhost:8501) in your browser  
+4️⃣ Upload a PDF & start chatting!  
