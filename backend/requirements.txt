@@ -1,0 +1,9 @@
+flask
+requests
+pymupdf
+nltk
+sentence-transformers
+chromadb
+langchain-ollama
+langchain
+langchain-community
