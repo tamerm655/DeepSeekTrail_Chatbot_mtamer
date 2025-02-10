@@ -1,26 +1,76 @@
-🚀 **Chatbot with RAG & Ollama**
+# RAG Chatbot with ChromaDB
 
-This repository contains a Flask-based chatbot with Retrieval-Augmented Generation (RAG) powered by ChromaDB and Ollama for local LLM inference. It includes a Streamlit UI for interaction and is fully containerized using Docker & Docker Compose.
+This repository contains a chatbot that retrieves and generates responses using ChromaDB for vector search. The system is designed to work with structured document retrieval, ensuring that responses are accurate and context-aware.
 
-✨ **Features**
+## Features
 
-Document Upload & Processing: Extracts text from PDFs and stores chunked embeddings in ChromaDB.
-Hybrid Retrieval: Uses semantic search + keyword filtering for improved response accuracy.
-Ollama Integration: Runs DeepSeek-R1 1.5B locally for cost-effective inference.
-Self-Verification: LLM checks its own responses for accuracy.
-Direct Answer Mode: Returns exact matches without LLM generation when possible.
-Streamlit Frontend: Simple, interactive UI for querying documents.
-Dockerized Deployment: Run the entire system with docker-compose up.
+- **Flask API**: Handles requests, processes user input, and retrieves relevant information.
+- **Streamlit Interface**: A simple web-based UI for interacting with the chatbot.
+- **ChromaDB for Vector Search**: Stores document embeddings and retrieves relevant chunks based on similarity.
+- **Hybrid Search**: Combines ChromaDB’s vector search with keyword-based filtering.
+- **Overlapping Sliding Window & Semantic Chunking**: Improves retrieval accuracy by splitting documents into meaningful sections.
+- **Re-ranking**: Uses free tools like `text-embedding-ada-002` to improve search results.
+- **Direct Answer Mode**: If an exact match is found, the chatbot returns the text without involving the LLM.
+- **Self-Verification**: The LLM cross-checks its own answers to improve reliability.
+- **Debugging View**: Displays retrieved text chunks for transparency.
+- **LangChain’s RetrievalQA**: Manages document retrieval and response generation.
 
-🛠 **Tech Stack**
+## Setup
 
-Backend: Flask, LangChain, ChromaDB, Ollama
-Frontend: Streamlit
-Infrastructure: Docker, Docker Compose
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-repo/rag-chatbot.git
+   cd rag-chatbot
+   ```
 
-🚀 **Getting Started**
+2. **Create a Virtual Environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   ```
 
-1️⃣ Clone the repo  
-2️⃣ Run `docker-compose up --build`  
-3️⃣ Open [http://localhost:8501](http://localhost:8501) in your browser  
-4️⃣ Upload a PDF & start chatting!  
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the Flask API**
+   ```bash
+   python api.py
+   ```
+
+5. **Run the Streamlit Interface**
+   ```bash
+   streamlit run app.py
+   ```
+
+## Configuration
+
+- **Documents**: Place PDF files in the `data/` folder. The system will process and store embeddings automatically.
+- **Environment Variables**: Store API keys and configuration details in a `.env` file.
+
+## Deployment with Docker
+
+1. **Build the Docker Image**
+   ```bash
+   docker build -t rag-chatbot .
+   ```
+2. **Run the Container**
+   ```bash
+   docker run -p 5000:5000 rag-chatbot
+   ```
+
+## Version Control & Collaboration
+
+- Use GitHub for tracking changes.
+- Create branches for new features.
+- Write clear commit messages and maintain documentation.
+
+## Next Steps
+
+- Improve indexing speed.
+- Explore additional re-ranking techniques.
+- Fine-tune retrieval strategies for better accuracy.
+
+Feel free to contribute by opening issues or submitting pull requests!
+
