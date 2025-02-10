@@ -24,7 +24,7 @@ RUN pip install -r requirements.txt
 # Download NLTK data (punkt and punkt_tab)
 RUN python -m nltk.downloader punkt punkt_tab
 
-# Expose ports for Flask and Streamlit
+# Expose ports for Flask
 EXPOSE 5000
 
 # Start Ollama in the background and then run the Flask app

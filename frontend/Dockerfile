@@ -10,8 +10,5 @@ COPY . /app
 # Install any needed packages specified in requirements.txt
 RUN pip install -r requirements.txt
 
-# Expose ports for Flask and Streamlit
-# EXPOSE 5000
-
-# Start both Flask and Streamlit apps
+# Start Streamlit app
 CMD ["streamlit", "run", "chatbot_interface.py"]
