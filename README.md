@@ -1,7 +1,9 @@
-🚀 Chatbot with RAG & Ollama
+🚀 **Chatbot with RAG & Ollama**
+
 This repository contains a Flask-based chatbot with Retrieval-Augmented Generation (RAG) powered by ChromaDB and Ollama for local LLM inference. It includes a Streamlit UI for interaction and is fully containerized using Docker & Docker Compose.
 
-✨ Features
+✨ **Features**
+
 Document Upload & Processing: Extracts text from PDFs and stores chunked embeddings in ChromaDB.
 Hybrid Retrieval: Uses semantic search + keyword filtering for improved response accuracy.
 Ollama Integration: Runs DeepSeek-R1 1.5B locally for cost-effective inference.
@@ -10,7 +12,8 @@ Direct Answer Mode: Returns exact matches without LLM generation when possible.
 Streamlit Frontend: Simple, interactive UI for querying documents.
 Dockerized Deployment: Run the entire system with docker-compose up.
 
-🛠 Tech Stack
+🛠 **Tech Stack**
+
 Backend: Flask, LangChain, ChromaDB, Ollama
 Frontend: Streamlit
 Infrastructure: Docker, Docker Compose
