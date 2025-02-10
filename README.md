@@ -59,18 +59,3 @@ This repository contains a chatbot that retrieves and generates responses using 
    ```bash
    docker run -p 5000:5000 rag-chatbot
    ```
-
-## Version Control & Collaboration
-
-- Use GitHub for tracking changes.
-- Create branches for new features.
-- Write clear commit messages and maintain documentation.
-
-## Next Steps
-
-- Improve indexing speed.
-- Explore additional re-ranking techniques.
-- Fine-tune retrieval strategies for better accuracy.
-
-Feel free to contribute by opening issues or submitting pull requests!
-
