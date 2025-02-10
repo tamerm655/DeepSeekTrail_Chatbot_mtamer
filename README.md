@@ -59,3 +59,4 @@ This repository contains a chatbot that retrieves and generates responses using 
    ```bash
    docker run -p 5000:5000 rag-chatbot
    ```
+3. **Access the Application** Visit http://localhost:8501/ in your browser.
