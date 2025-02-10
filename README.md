@@ -29,7 +29,7 @@ This repository contains a chatbot that retrieves and generates responses using 
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
    ```
 
-3. **Install Dependencies**
+3. **Install Dependencies (for backend and frontend)**
    ```bash
    pip install -r requirements.txt
    ```
