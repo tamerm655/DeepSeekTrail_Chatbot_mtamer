@@ -36,12 +36,12 @@ This repository contains a chatbot that retrieves and generates responses using 
 
 4. **Run the Flask API**
    ```bash
-   python api.py
+   python backend/main.py
    ```
 
 5. **Run the Streamlit Interface**
    ```bash
-   streamlit run app.py
+   streamlit run frontend/chatbot_interface.py
    ```
 
 ## Configuration
