@@ -1,4 +1,4 @@
-# Applab Cahtbot
+# DeepSeekTrail Cahtbot
 
 This repository contains a chatbot that retrieves and generates responses using ChromaDB for vector search. The system is designed to work with structured document retrieval, ensuring that responses are accurate and context-aware.
 
